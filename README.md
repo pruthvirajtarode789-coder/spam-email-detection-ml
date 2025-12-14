@@ -78,66 +78,85 @@ Result is displayed as:
 
 ✅ Not Spam
 
-🧩 System Architecture Diagram
-🔹 Simple Architecture (Easy to Understand)
-+---------+
-|  User   |
-+----+----+
-     |
-     v
-+------------------+
-| Streamlit UI     |
-| (Web Interface)  |
-+------------------+
-     |
-     v
-+------------------+
-| TF-IDF Vectorizer|
-+------------------+
-     |
-     v
-+------------------+
-| ML Model         |
-| (Naive Bayes)    |
-+------------------+
-     |
-     v
-+------------------+
-| Prediction       |
-| Spam / Not Spam  |
-+------------------+
+🏗️ System Architecture Diagram
+🔹 Simple Architecture Diagram (Readable on GitHub)
++-------+
+| User  |
++-------+
+    |
+    v
++----------------------+
+| Streamlit Web App    |
+| (User Interface)     |
++----------------------+
+    |
+    v
++----------------------+
+| TF-IDF Vectorizer    |
+| (Text Processing)   |
++----------------------+
+    |
+    v
++----------------------+
+| ML Model             |
+| (Naive Bayes)        |
++----------------------+
+    |
+    v
++----------------------+
+| Prediction Output    |
+| Spam / Not Spam      |
++----------------------+
 
-🔹 Mermaid Diagram (GitHub / Documentation Friendly)
+
+✅ This ASCII diagram will now appear clean and aligned.
+
+🔹 System Architecture Diagram (Mermaid – GitHub Supported)
+
+⚠️ Important:
+Mermaid diagrams MUST be inside triple backticks with mermaid.
+
 graph TD
-A[User] --> B[Streamlit Web App]
-B --> C[TF-IDF Vectorizer]
-C --> D[Naive Bayes Model]
-D --> E[Spam / Not Spam Result]
+    A[User] --> B[Streamlit Web App]
+    B --> C[TF-IDF Vectorizer]
+    C --> D[Naive Bayes Model]
+    D --> E[Spam / Not Spam Result]
+
+
+✅ This will now render visually on GitHub (not as text).
 
 👤 Use Case Diagram
-🔹 Simple Use Case Diagram
-      +-------------------+
-      |       User        |
-      +-------------------+
-               |
-               |
-        +------v------+
-        | Enter Email |
-        +-------------+
-               |
-        +------v------+
-        | Check Spam  |
-        +-------------+
-               |
-        +------v------+
-        | View Result |
-        +-------------+
+🔹 Simple Use Case Diagram (ASCII)
+        +------+
+        | User |
+        +------+
+            |
+            v
+    +----------------+
+    | Enter Email    |
+    +----------------+
+            |
+            v
+    +----------------+
+    | Check Spam     |
+    +----------------+
+            |
+            v
+    +----------------+
+    | View Result    |
+    +----------------+
 
-🔹 Mermaid Use Case Diagram
+
+✅ Easy for students, evaluators, and reports.
+
+🔹 Use Case Diagram (Mermaid)
 graph LR
-User -->|Enter email text| App[Spam Detection System]
-User -->|Check spam| App
-App -->|Display result| User
+    User -->|Enter email text| App[Spam Detection System]
+    User -->|Click Check| App
+    App -->|Display Result| User
+
+
+✅ This will now show a proper flow diagram on GitHub.
 
 ▶️ How to Run Locally
 git clone https://github.com/pruthvirajtarode789-coder/spam-email-detection-ml.git
