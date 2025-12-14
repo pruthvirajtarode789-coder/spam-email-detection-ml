@@ -1,7 +1,7 @@
 📧 Spam Email Detection using Machine Learning
 
-A Machine Learning–based web application that classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
-The system is built with Python, Scikit-learn, and Streamlit and deployed on Render.
+A Machine Learning based web application that classifies emails as Spam or Not Spam using Natural Language Processing (NLP) techniques.
+The application is built using Python, Scikit-learn, and Streamlit and is deployed on Render.
 
 🔗 Live Demo
 
@@ -9,154 +9,92 @@ The system is built with Python, Scikit-learn, and Streamlit and deployed on Ren
 
 📌 Project Overview
 
-Spam emails are unsolicited and often harmful messages sent in bulk.
-This project uses Machine Learning to automatically detect spam emails based on their content.
+Spam emails are unwanted and often harmful messages sent in bulk to users.
+This project aims to automatically detect such emails using Machine Learning by analyzing the email content.
 
-The application:
+The system:
 
-Takes email text as input
+Accepts email text as input
 
-Processes it using NLP
+Processes the text using NLP techniques
 
-Predicts whether the email is Spam or Not Spam
+Classifies the email as Spam or Not Spam
 
 Displays the result using a simple web interface
 
 🎯 Objectives
 
-To build a reliable spam email classifier
+Build an automated spam email detection system
 
-To apply NLP techniques such as TF-IDF
+Apply text preprocessing and vectorization
 
-To deploy a real-world ML project using Streamlit
+Train a supervised Machine Learning model
 
-To provide a user-friendly interface for email classification
+Deploy the model as a web application
 
-🧠 Machine Learning Model
+Provide an easy-to-use interface for users
 
-Algorithm: Multinomial Naive Bayes
+🧠 Machine Learning Details
 
-Text Vectorization: TF-IDF Vectorizer
+Problem Type: Binary Classification
 
 Learning Type: Supervised Learning
 
-Problem Type: Binary Classification (Spam / Ham)
+Algorithm Used: Multinomial Naive Bayes
+
+Text Vectorization: TF-IDF (Term Frequency – Inverse Document Frequency)
 
 🛠️ Tech Stack
 
-Programming Language: Python
+Language: Python
 
 Libraries: Pandas, NumPy, Scikit-learn
 
-Frontend: Streamlit
+Web Framework: Streamlit
 
-Deployment: Render
+Deployment Platform: Render
 
 Version Control: Git & GitHub
 
 📂 Project Structure
-Spam_Email_Detection/
+spam-email-detection-ml/
 │
-├── app.py                 # Streamlit web app
-├── train_model.py         # Model training script
-├── spam_model.pkl         # Trained ML model
-├── vectorizer.pkl         # TF-IDF vectorizer
-├── requirements.txt       # Project dependencies
-└── README.md              # Project documentation
+├── app.py                  # Streamlit web application
+├── train_model.py          # Model training script
+├── spam_model.pkl          # Trained ML model
+├── vectorizer.pkl          # TF-IDF vectorizer
+├── requirements.txt        # Required Python libraries
+└── README.md               # Project documentation
 
-⚙️ How It Works
+⚙️ System Architecture
+User
+  |
+  v
+Streamlit Web Interface
+  |
+  v
+TF-IDF Vectorizer
+  |
+  v
+Naive Bayes Classifier
+  |
+  v
+Spam / Not Spam Result
 
-User enters email text in the web app
-
-Text is converted into numerical form using TF-IDF
-
-The trained Naive Bayes model predicts the class
-
-Result is displayed as:
-
-🚨 Spam Email
-
-✅ Not Spam
-
-🏗️ System Architecture Diagram
-🔹 Simple Architecture Diagram (Readable on GitHub)
-+-------+
-| User  |
-+-------+
-    |
-    v
-+----------------------+
-| Streamlit Web App    |
-| (User Interface)     |
-+----------------------+
-    |
-    v
-+----------------------+
-| TF-IDF Vectorizer    |
-| (Text Processing)   |
-+----------------------+
-    |
-    v
-+----------------------+
-| ML Model             |
-| (Naive Bayes)        |
-+----------------------+
-    |
-    v
-+----------------------+
-| Prediction Output    |
-| Spam / Not Spam      |
-+----------------------+
-
-
-✅ This ASCII diagram will now appear clean and aligned.
-
-🔹 System Architecture Diagram (Mermaid – GitHub Supported)
-
-⚠️ Important:
-Mermaid diagrams MUST be inside triple backticks with mermaid.
-
-graph TD
-    A[User] --> B[Streamlit Web App]
-    B --> C[TF-IDF Vectorizer]
-    C --> D[Naive Bayes Model]
-    D --> E[Spam / Not Spam Result]
-
-
-✅ This will now render visually on GitHub (not as text).
-
-👤 Use Case Diagram
-🔹 Simple Use Case Diagram (ASCII)
-        +------+
-        | User |
-        +------+
-            |
-            v
-    +----------------+
-    | Enter Email    |
-    +----------------+
-            |
-            v
-    +----------------+
-    | Check Spam     |
-    +----------------+
-            |
-            v
-    +----------------+
-    | View Result    |
-    +----------------+
-
-
-✅ Easy for students, evaluators, and reports.
-
-🔹 Use Case Diagram (Mermaid)
-graph LR
-    User -->|Enter email text| App[Spam Detection System]
-    User -->|Click Check| App
-    App -->|Display Result| User
-
-
-✅ This will now show a proper flow diagram on GitHub.
+👤 Use Case Flow
+User
+  |
+  v
+Enter Email Text
+  |
+  v
+Click "Check"
+  |
+  v
+System Classifies Email
+  |
+  v
+Result Displayed (Spam / Not Spam)
 
 ▶️ How to Run Locally
 git clone https://github.com/pruthvirajtarode789-coder/spam-email-detection-ml.git
@@ -168,30 +106,27 @@ streamlit run app.py
 
 Platform: Render
 
-Deployment Type: Web Service
+Service Type: Web Service
 
-Status: Live & Working
+Deployment Status: Live and Working
 
 Live URL:
 👉 https://spam-email-detection-ml-2p8w.onrender.com/
 
 📊 Sample Inputs
+Spam Email Example
+Congratulations! You have won $1000. Click here to claim now.
 
-Spam Example:
-
-Congratulations! You have won $1000. Click here now!
-
-
-Not Spam Example:
-
-Hi, please find the meeting agenda attached for tomorrow.
+Not Spam Email Example
+Hello, please find the attached report for tomorrow’s meeting.
 
 ✅ Project Status
 
-✔ Model trained
-✔ Web app developed
-✔ Successfully deployed
-✔ Internship-ready
+✔ Dataset processed
+✔ Model trained successfully
+✔ Web application developed
+✔ Deployed on cloud
+✔ Ready for internship submission
 
 👨‍💻 Author
 
@@ -200,4 +135,8 @@ B.Tech – Computer Science & Engineering
 MGM’s College of Engineering, Nanded
 
 GitHub:
+https://github.com/pruthvirajtarode789-coder
 
+📜 License
+
+This project is developed for educational and internship purposes only.
